@@ -23,6 +23,5 @@ def first_word(str)
 end
 
 def titleize (str)
-	str = str.chars[0].upcase
-	return str
+	
 end
