@@ -23,5 +23,8 @@ def first_word(str)
 end
 
 def titleize (str)
-	
+	# str.capitalize!
+	arr = str.split
+	arr[0].capitalize!
+		return arr.join(" ")
 end
