@@ -23,8 +23,14 @@ def first_word(str)
 end
 
 def titleize (str)
-	# str.capitalize!
 	arr = str.split
 	arr[0].capitalize!
-		return arr.join(" ")
+	arr.each do |i|
+		if i == "and" || i == "the" || i == "over"
+			nil
+		else
+		i.capitalize!
+		end
+	end
+	return arr.join(" ")
 end
