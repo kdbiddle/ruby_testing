@@ -3,7 +3,7 @@ def translate(str)
 	arr = str.split(" ")
 	finalArray = []
 	arr.each do |word|
-		firstVowel = /[aeiou]/.match(word)[0]
+		firstVowel = /[aeio]/.match(word)[0]
 		n = word.index(firstVowel)
 		word = word.chars
 		if n == 0
