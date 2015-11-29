@@ -29,10 +29,7 @@ def multiply (arr)
 end
 
 def power(a,b)
-	final=1
-	b.times do
-		final *= a
-	end
+	final = a ** b
 	return final
 end
 
