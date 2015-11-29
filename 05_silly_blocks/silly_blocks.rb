@@ -1,3 +1,3 @@
 def reverser
-	yield reverse
+	return yield.split(' ').map{|word| word.reverse}.join(' ')
 end
