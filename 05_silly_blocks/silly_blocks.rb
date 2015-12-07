@@ -1,7 +1,9 @@
+# reverses string in block call
 def reverser
 	return yield.split(' ').map{|word| word.reverse}.join(' ')
 end
 
+# adds n to number in block call, defaults to add 1 if no arg provided
 def adder(*n)
 	if n==[]
 		return yield+1
@@ -10,6 +12,7 @@ def adder(*n)
 	end
 end
 
+# repeats block call n times
 def repeater(*n)
 	if n == []
 		yield

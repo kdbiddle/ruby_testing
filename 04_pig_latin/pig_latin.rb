@@ -1,3 +1,4 @@
+# returns the input string translated to pig latin
 def translate(str)
 	#splits str into individual words
 	arr = str.split(" ")
