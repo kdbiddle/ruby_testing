@@ -1,4 +1,4 @@
-# reverses string in block call
+# reverses each word in string in block call
 def reverser
 	return yield.split(' ').map{|word| word.reverse}.join(' ')
 end
