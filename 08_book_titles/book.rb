@@ -1,4 +1,5 @@
 class Book
+	
 	def title=(str)
 	arr = str.split
 	arr[0].capitalize!
