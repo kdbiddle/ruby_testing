@@ -1,4 +1,4 @@
 source "https://rubygems.org"
 
-gem "rake"
-gem "rspec", "~>2.0"
+gem 'rake', '<11.0'
+gem "rspec", '>3.0'
