@@ -9,12 +9,8 @@ def shout(str)
 end
 
 # repeats string n times
-def repeat(str, *n)
-	if n == []
-		return "#{str} #{str}"
-	else
-		return "#{[str]*n[0]*" "}"
-	end
+def repeat(str, n = 2)
+	return "#{[str]*n*" "}"
 end
 
 # returns the first n letters of the input word or string
@@ -31,10 +27,8 @@ def titleize (str)
 	arr = str.split
 	arr[0].capitalize!
 	arr.each do |i|
-		if i == "and" || i == "the" || i == "over"
-			nil
-		else
-		i.capitalize!
+		if i != "and" && i != "the" && i != "over"
+			i.capitalize!
 		end
 	end
 	return arr.join(" ")

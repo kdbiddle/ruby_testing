@@ -4,21 +4,13 @@ def reverser
 end
 
 # adds n to number in block call, defaults to add 1 if no arg provided
-def adder(*n)
-	if n==[]
-		return yield+1
-	else
-		return yield+3
-	end
+def adder(n = 1)
+	return yield + n
 end
 
 # repeats block call n times
-def repeater(*n)
-	if n == []
+def repeater(n = 1)
+	n.times do |variable|
 		yield
-	else
-		n[0].times do |variable|
-			yield
-		end
 	end
 end
